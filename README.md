@@ -1,8 +1,8 @@
 # lets-play-chess
 
 * Tech Stack-
- * Python 
- * Sphinx
+  - Python 
+  - Sphinx
 
 * Description-
   
