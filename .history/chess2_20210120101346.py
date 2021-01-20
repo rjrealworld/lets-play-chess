@@ -34,22 +34,18 @@ def pgn_to_move(game_file: str) ->[str]:
     just_moves = [_.strip() for _ in MOVE_NUM.split(str_removed)] #remove numbers
     last_move = just_moves[-1]
     last_move = re.sub('( *1 *- *0 *| *0 *- *1 *| *1/2 *- *1/2 *)', '', last_move) #remove score from the last index
-    moves = just_moves[:-1] + [last_move] #list of moves and blanks
-    return [_ for _ in moves if len(_) > 0] #only moves
-
+    moves = just_moves[:-1] + [last_move] #list of moves
+    return [_ for _ in moves if len(_) > 0]
 
 def pre_process_a_move(move: str) -> (str, str):
     wmove, bmove = move.split()
-    #pawn moves
     if wmove[0] in 'abcdefgh':
         wmove = 'P' + wmove
     if bmove[0] in 'abcdefgh':
         bmove = 'p' + bmove
-    #considering lower for black and upper for white
     else:
         bmove = bmove.lower()
     return wmove, bmove
-    
     
 def pre_process_moves(moves: [str]) -> [(str, str)]:                                                                                          
     return [pre_process_a_move(move) for move in moves[:-1]] + [(moves[-1], )]   
