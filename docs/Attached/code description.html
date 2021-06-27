@@ -1,0 +1,178 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Description of the Code &#8212; Sphinx Documentation  documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/sidebar.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Forsyth-Edwards Notation (FEN)" href="What is FEN.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="What is FEN.html" title="Forsyth-Edwards Notation (FEN)"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx Documentation  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="Chess Project.html" accesskey="U">Chess Project</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="description-of-the-code">
+<h1>Description of the Code<a class="headerlink" href="#description-of-the-code" title="Permalink to this headline">¶</a></h1>
+<a class="reference internal image-reference" href="../_images/Capture.png"><img alt="../_images/Capture.png" class="align-center" src="../_images/Capture.png" style="width: 50%;" /></a>
+<div class="section" id="reading-pgn-file">
+<h2>Reading PGN file<a class="headerlink" href="#reading-pgn-file" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/codeDes1.png" class="align-right" src="../_images/codeDes1.png" />
+<p>In the line 16-56, there are four functions namely:</p>
+<div class="line-block">
+<div class="line">pgn_to_moves()</div>
+<div class="line">clean()</div>
+<div class="line">pre_process_a_move()</div>
+<div class="line">pre_process_last_move()</div>
+</div>
+<p>In these the pgn file from which the comments are removed and the moves are collected up.
+Regex module is used in the fist part of the function in the code which helps in obtaining a similar pattern. In this, I replaced open brackets ({, [) with &lt; and clsoed brackets (}, ]) with &gt;.
+Then I removed all the data with the angle brackets and hence removed all the comments from the pgn file.</p>
+</div>
+<div class="section" id="checking-pawn-motion">
+<h2>Checking pawn motion<a class="headerlink" href="#checking-pawn-motion" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/codeDes2.png"><img alt="../_images/codeDes2.png" class="align-left" src="../_images/codeDes2.png" style="width: 70%;" /></a>
+<p>In the line 58-68, there are 4 function named:</p>
+<div class="line-block">
+<div class="line">is_regular_pawn_move()</div>
+<div class="line">is_capture()</div>
+<div class="line">is_promotion()</div>
+<div class="line">is_enpassant()</div>
+</div>
+<p>In these function the type of pawn motion is checked whether it is a normal move of a pawn, if it is capturing a piece, if its the promotion case of pawn or is it enpassant, all the cases are checked in this part of code.
+Here again, regex is used which helps in determining the pattern.</p>
+</div>
+<div class="section" id="move-pawn">
+<h2>Move pawn<a class="headerlink" href="#move-pawn" title="Permalink to this headline">¶</a></h2>
+<p>In line 70-80, the function make_pawn() changed the position of pawn if the piece is pawn</p>
+</div>
+<div class="section" id="castling">
+<h2>Castling<a class="headerlink" href="#castling" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/codeDes3.png"><img alt="../_images/codeDes3.png" class="align-left" src="../_images/codeDes3.png" style="width: 50%;" /></a>
+<p>Line 82-99 checks for the castling move.</p>
+<p>This is the castling code in which  I have assigned home_rank, king and rook on the basic of color case (for black it is o and for white it is O given in moves).
+The next thing to take care was whether it is queen side castling or the other. For that I checked for the length of the moves (for queen side it is O-O-O and for other it is O-O).
+Then I changed the postions in the board view and the piece view and returned it.</p>
+</div>
+<div class="section" id="enpassant">
+<h2>Enpassant<a class="headerlink" href="#enpassant" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/codeDes4.png"><img alt="../_images/codeDes4.png" class="align-right" src="../_images/codeDes4.png" style="width: 40%;" /></a>
+<p>Line 127-141 checks for the enpassant move.</p>
+<p>This is the enpassant code in which I have removed the captured part first from the move (i.e. the x written in the move string) and then assigned different values to pawn, from_file and to_square.
+Then I looked for the final position where the pawn has moved and for the position at which the pawn has been captured.</p>
+<p>After getting the postions of captured pawn piece I changed the positions for all the pawns which have moves in the board view and the piece view and then returned the value.</p>
+</div>
+<div class="section" id="rest-code">
+<h2>Rest Code<a class="headerlink" href="#rest-code" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/codeDes5.png"><img alt="../_images/codeDes5.png" class="align-left" src="../_images/codeDes5.png" style="width: 50%;" /></a>
+<p>In this part of code I have initialised some constant values which are used in my whole code.
+FILES refers to the columns that go up and down the chessboard. RANKS are rows that go from side to side across the chessboard and are referred to by numbers.
+can_move_from tells about all the possible ranks where a pawn can move (given a dictionary of initial and final ranks possible).
+Similarly, the dictionary can_capture_from tells the possible positions where a given rank of pawn can capture another pawn at a particular rank.</p>
+<div class="line-block">
+<div class="line">Line 154-163 checks if the way between the initial and final position is blocked or not because if there is a piece present in the way then the move is not possiblle to be made.</div>
+</div>
+<div class="line-block">
+<div class="line">Line 208-226 is the main function where two moves are taken at a time, the first as white move and the second as black move. The change is made in the board and piece view and then other moves are iterated.</div>
+</div>
+<div class="line-block">
+<div class="line">Using the function display_position(), the position of board can be displayed on the screen.</div>
+</div>
+<p><strong>For the code reference click here:</strong></p>
+<p><a class="reference external" href="https://ideone.com/3S4c7V">CODE</a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Description of the Code</a><ul>
+<li><a class="reference internal" href="#reading-pgn-file">Reading PGN file</a></li>
+<li><a class="reference internal" href="#checking-pawn-motion">Checking pawn motion</a></li>
+<li><a class="reference internal" href="#move-pawn">Move pawn</a></li>
+<li><a class="reference internal" href="#castling">Castling</a></li>
+<li><a class="reference internal" href="#enpassant">Enpassant</a></li>
+<li><a class="reference internal" href="#rest-code">Rest Code</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="What is FEN.html"
+                        title="previous chapter">Forsyth-Edwards Notation (FEN)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Attached/code description.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="What is FEN.html" title="Forsyth-Edwards Notation (FEN)"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx Documentation  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="Chess Project.html" >Chess Project</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Riya Jain.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.4.
+    </div>
+  </body>
+</html>

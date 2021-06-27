@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="243" height="245" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title xml:lang="en">Chess Castling Movie</title>
+<defs id="Chess_Symbols">
+
+<title xml:lang="en">Chess Symbols</title>
+<desc xml:lang="en">These symbols are modified from images existing on Wikimedia Commons (English), and See the value of each 'id' attribute and add '.svg' to the end for the original filenames of the images used for each symbol. License and Author information would exist on the Wikimedia Commons pages for each image.</desc>
+<!-- Chess Symbols:
+	These symbols are modified from images existing on Wikimedia Commons (English), and
+	See the value of each 'id' attribute and add '.svg' to the end
+	for the original filenames of the images used for each symbol.
+Accessed: 2010-02-12 @ Wikimedia Commons
+	License and Author information should exist
+	on the Wikimedia Commons pages for each image.
+-->
+
+	<symbol id="Chess_zhor_26" viewBox="0 0 242 18" preserveAspectRatio="xMidYMin meet">
+	<title xml:lang="en">Letters a-h</title>
+	<g style="font-size:17.2px; font-weight:bold; font-family:Bitstream Vera Sans Bold, Courier New, monospace">
+	<text x="25.0963" y="13.4416">a</text>
+	<text x="51.811283" y="13.4051">b</text>
+	<text x="77.7962" y="13.3259">c</text>
+	<text x="104.0979" y="13.3259">d</text>
+	<text x="130.0035" y="13.3259">e</text>
+	<text x="156.6222" y="13.5636">f</text>
+	<text x="182.9239" y="13.3259">g</text>
+	<text x="209.2257" y="13.6428">h</text>
+	</g>
+	</symbol>
+
+	<symbol id="Chess_zver_26" viewBox="0 0 16 210" preserveAspectRatio="xMidYMin meet">
+	<title xml:lang="en">Numbers 1-8</title>
+	<g style="font-size:17.24170876px; font-weight:bold; text-align:start; line-height:150%; writing-mode:lr-tb; text-anchor:start; font-family:Courier New, monospace;">
+	<text x="3.1401141" y="20.344978">8</text>
+	<text x="3.1401141" y="46.207542">7</text>
+	<text x="3.1401141" y="72.070107">6</text>
+	<text x="3.1401141" y="97.932671">5</text>
+	<text x="3.1401141" y="123.79523">4</text>
+	<text x="3.1401141" y="149.65779">3</text>
+	<text x="3.1401141" y="175.52036">2</text>
+	<text x="3.1401141" y="201.38292">1</text>
+	</g>
+	</symbol>
+
+	<symbol id="Chess_d45" viewBox="0 0 45 45">
+	<desc xml:lang="en">Dark square</desc>
+	<rect width="45" height="45" fill="#d18b47" />
+	</symbol>
+
+	<symbol id="Chess_l45" viewBox="0 0 45 45">
+	<desc xml:lang="en">Light square</desc>
+	<rect width="45" height="45" fill="#ffce9e" />
+	</symbol>
+
+	<symbol id="Chess_klt45" viewBox="0 0 45 45">
+	<desc xml:lang="en">Light King</desc>
+	<g style="stroke:#000; stroke-width:1.5px; stroke-linejoin:round; stroke-linecap:round;">
+	<path fill="#fff" d="M 22.5,11.625 L 22.5,6 M 20,8 L 25,8 M 22.5,25 C 22.5,25 27,17.5 25.5,14.5 C 25.5,14.5 24.5,12 22.5,12 C 20.5,12 19.5,14.5 19.5,14.5 C 18,17.5 22.5,25 22.5,25" />
+	<path fill="#fff" d="M 11.5,37 C 17,40.5 27,40.5 32.5,37 L 32.5,30 C 32.5,30 41.5,25.5 38.5,19.5 C 34.5,13 25,16 22.5,23.5 L 22.5,27 L 22.5,23.5 C 19,16 9.5,13 6.5,19.5 C 3.5,25.5 11.5,29.5 11.5,29.5 L 11.5,37 z " />
+	<path fill="none" d="M 11.5,29.5 C 17,27 27,27 32.5,30 M 11.5,37 C 17,34.5 27,34.5 32.5,37 M 11.5,33.5 C 17,31.5 27,31.5 32.5,33.5" />
+	</g>
+	</symbol>
+
+	<symbol id="Chess_rlt45" viewBox="0 0 45 45">
+	<desc xml:lang="en">Light Rook</desc>
+	<path style="fill:#fff; stroke:#000; stroke-width:1.5px; stroke-linecap:round; stroke-linejoin:round;"
+	d="M 9,39 L 36,39 L 36,36 L 9,36 L 9,39 z M 12,36 L 12,32 L 33,32 L 33,36 L 12,36 z M 11,14 L 11,9 L 15,9 L 15,11 L 20,11 L 20,9 L 25,9 L 25,11 L 30,11 L 30,9 L 34,9 L 34,14 M 34,14 L 31,17 L 14,17 L 11,14 M 31,17 L 31,29.5 L 14,29.5 L 14,17 M 31,29.5 L 32.5,32 L 12.5,32 L 14,29.5 M 11,14 L 34,14" />
+	</symbol>
+
+	<symbol id="Chess_kdt45" viewBox="0 0 45 45">
+	<desc xml:lang="en">Dark King</desc>
+	<g style="stroke-width:1.5px; stroke-linecap:round; stroke-linejoin:round;">
+	<path style="fill:#000; stroke:#000;" d="M 22.5,11.625 L 22.5,6 M 20,8 L 25,8 M 22.5,25 C 22.5,25 27,17.5 25.5,14.5 C 25.5,14.5 24.5,12 22.5,12 C 20.5,12 19.5,14.5 19.5,14.5 C 18,17.5 22.5,25 22.5,25 M 11.5,37 C 17,40.5 27,40.5 32.5,37 L 32.5,30 C 32.5,30 41.5,25.5 38.5,19.5 C 34.5,13 25,16 22.5,23.5 L 22.5,27 L 22.5,23.5 C 19,16 9.5,13 6.5,19.5 C 3.5,25.5 11.5,29.5 11.5,29.5 L 11.5,37 z " />
+    <path style="fill:none; stroke:#fff;" d="M 11.5,29.5 C 17,27 27,27 32.5,30 M 11.5,37 C 17,34.5 27,34.5 32.5,37 M 11.5,33.5 C 17,31.5 27,31.5 32.5,33.5 M 32,29.5 C 32,29.5 40.5,25.5 38.025969,19.846552 C 34.147406,13.996552 25,18 22.5,24.5 L 22.511718,26.596552 L 22.5,24.5 C 20,18 9.9063892,13.996552 6.9974672,19.846552 C 4.5,25.5 11.845671,28.846552 11.845671,28.846552" />
+	</g>
+	</symbol>
+
+	<symbol id="Chess_rdt45" viewBox="0 0 45 45">
+	<desc xml:lang="en">Dark Rook</desc>
+    <path style="fill:#000;stroke:#000;stroke-width:1.5px;stroke-linejoin:round;" d="M 9,39 H 36 V 36 H 9 V 39 Z M 12.5,32 L 14,29.5 H 31 L 32.5,32 H 12.5 Z M 12,36 V 32 H 33 V 36 H 12 Z M 14,29.5 V 16.5 H 31 V 29.5 H 14 Z M 14,16.5 L 11,14 H 34 L 31,16.5 H 14 Z M 11,14 V 9 H 15 V 11 H 20 V 9 H 25 V 11 H 30 V 9 H 34 V 14 H 11 Z" />
+	<path style="fill:none;stroke:#fff;stroke-width:1px;stroke-linecap:round;" d="M 12,35.5 H 33 M 13,31.5 H 32 M 14,29.5 H 31 M 14,16.5 H 31 M 11,14 H 34" />
+	</symbol>
+</defs>
+
+<g id="Chess_diagram">
+<title xml:lang="en">Chess diagram</title>
+<!-- Chess diagram.
+	From WikiMedia Commons' Template: Chess diagram
+	See: http://commons.wikimedia.org/wiki/Template:Chess_diagram
+-->
+
+<!-- Board Key -->
+<use xlink:href="#Chess_zver_26" x="0" y="18" width="16" height="210" />
+<use xlink:href="#Chess_zver_26" x="224" y="18" width="16" height="210" />
+<use xlink:href="#Chess_zhor_26" x="0" y="0" width="242" height="18" />
+<use xlink:href="#Chess_zhor_26" x="0" y="226" width="242" height="18" />
+
+<!-- Rank 8 -->
+<use id="tile_a8" xlink:href="#Chess_l45" width="26" height="26" x="16" y="18"><title>a8</title></use>
+<use id="tile_b8" xlink:href="#Chess_d45" width="26" height="26" x="42" y="18"><title>b8</title></use>
+<use id="tile_c8" xlink:href="#Chess_l45" width="26" height="26" x="68" y="18"><title>c8</title></use>
+<use id="tile_d8" xlink:href="#Chess_d45" width="26" height="26" x="94" y="18"><title>d8</title></use>
+<use id="tile_e8" xlink:href="#Chess_l45" width="26" height="26" x="120" y="18"><title>e8</title></use>
+<use id="tile_f8" xlink:href="#Chess_d45" width="26" height="26" x="146" y="18"><title>f8</title></use>
+<use id="tile_g8" xlink:href="#Chess_l45" width="26" height="26" x="172" y="18"><title>g8</title></use>
+<use id="tile_h8" xlink:href="#Chess_d45" width="26" height="26" x="198" y="18"><title>h8</title></use>
+
+<!-- Rank 7 -->
+<use id="tile_a7" xlink:href="#Chess_d45" width="26" height="26" x="16" y="44"><title>a7</title></use>
+<use id="tile_b7" xlink:href="#Chess_l45" width="26" height="26" x="42" y="44"><title>b7</title></use>
+<use id="tile_c7" xlink:href="#Chess_d45" width="26" height="26" x="68" y="44"><title>c7</title></use>
+<use id="tile_d7" xlink:href="#Chess_l45" width="26" height="26" x="94" y="44"><title>d7</title></use>
+<use id="tile_e7" xlink:href="#Chess_d45" width="26" height="26" x="120" y="44"><title>e7</title></use>
+<use id="tile_f7" xlink:href="#Chess_l45" width="26" height="26" x="146" y="44"><title>f7</title></use>
+<use id="tile_g7" xlink:href="#Chess_d45" width="26" height="26" x="172" y="44"><title>g7</title></use>
+<use id="tile_h7" xlink:href="#Chess_l45" width="26" height="26" x="198" y="44"><title>h7</title></use>
+
+<!-- Rank 6 -->
+<use id="tile_a6" xlink:href="#Chess_l45" width="26" height="26" x="16" y="70"><title>a6</title></use>
+<use id="tile_b6" xlink:href="#Chess_d45" width="26" height="26" x="42" y="70"><title>b6</title></use>
+<use id="tile_c6" xlink:href="#Chess_l45" width="26" height="26" x="68" y="70"><title>c6</title></use>
+<use id="tile_d6" xlink:href="#Chess_d45" width="26" height="26" x="94" y="70"><title>d6</title></use>
+<use id="tile_e6" xlink:href="#Chess_l45" width="26" height="26" x="120" y="70"><title>e6</title></use>
+<use id="tile_f6" xlink:href="#Chess_d45" width="26" height="26" x="146" y="70"><title>f6</title></use>
+<use id="tile_g6" xlink:href="#Chess_l45" width="26" height="26" x="172" y="70"><title>g6</title></use>
+<use id="tile_h6" xlink:href="#Chess_d45" width="26" height="26" x="198" y="70"><title>h6</title></use>
+
+<!-- Rank 5 -->
+<use id="tile_a5" xlink:href="#Chess_d45" width="26" height="26" x="16" y="96"><title>a5</title></use>
+<use id="tile_b5" xlink:href="#Chess_l45" width="26" height="26" x="42" y="96"><title>b5</title></use>
+<use id="tile_c5" xlink:href="#Chess_d45" width="26" height="26" x="68" y="96"><title>c5</title></use>
+<use id="tile_d5" xlink:href="#Chess_l45" width="26" height="26" x="94" y="96"><title>d5</title></use>
+<use id="tile_e5" xlink:href="#Chess_d45" width="26" height="26" x="120" y="96"><title>e5</title></use>
+<use id="tile_f5" xlink:href="#Chess_l45" width="26" height="26" x="146" y="96"><title>f5</title></use>
+<use id="tile_g5" xlink:href="#Chess_d45" width="26" height="26" x="172" y="96"><title>g5</title></use>
+<use id="tile_h5" xlink:href="#Chess_l45" width="26" height="26" x="198" y="96"><title>h5</title></use>
+
+<!-- Rank 4 -->
+<use id="tile_a4" xlink:href="#Chess_l45" width="26" height="26" x="16" y="122"><title>a4</title></use>
+<use id="tile_b4" xlink:href="#Chess_d45" width="26" height="26" x="42" y="122"><title>b4</title></use>
+<use id="tile_c4" xlink:href="#Chess_l45" width="26" height="26" x="68" y="122"><title>c4</title></use>
+<use id="tile_d4" xlink:href="#Chess_d45" width="26" height="26" x="94" y="122"><title>d4</title></use>
+<use id="tile_e4" xlink:href="#Chess_l45" width="26" height="26" x="120" y="122"><title>e4</title></use>
+<use id="tile_f4" xlink:href="#Chess_d45" width="26" height="26" x="146" y="122"><title>f4</title></use>
+<use id="tile_g4" xlink:href="#Chess_l45" width="26" height="26" x="172" y="122"><title>g4</title></use>
+<use id="tile_h4" xlink:href="#Chess_d45" width="26" height="26" x="198" y="122"><title>h4</title></use>
+
+<!-- Rank 3 -->
+<use id="tile_a3" xlink:href="#Chess_d45" width="26" height="26" x="16" y="148"><title>a3</title></use>
+<use id="tile_b3" xlink:href="#Chess_l45" width="26" height="26" x="42" y="148"><title>b3</title></use>
+<use id="tile_c3" xlink:href="#Chess_d45" width="26" height="26" x="68" y="148"><title>c3</title></use>
+<use id="tile_d3" xlink:href="#Chess_l45" width="26" height="26" x="94" y="148"><title>d3</title></use>
+<use id="tile_e3" xlink:href="#Chess_d45" width="26" height="26" x="120" y="148"><title>e3</title></use>
+<use id="tile_f3" xlink:href="#Chess_l45" width="26" height="26" x="146" y="148"><title>f3</title></use>
+<use id="tile_g3" xlink:href="#Chess_d45" width="26" height="26" x="172" y="148"><title>g3</title></use>
+<use id="tile_h3" xlink:href="#Chess_l45" width="26" height="26" x="198" y="148"><title>h3</title></use>
+
+<!-- Rank 2 -->
+<use id="tile_a2" xlink:href="#Chess_l45" width="26" height="26" x="16" y="174"><title>a2</title></use>
+<use id="tile_b2" xlink:href="#Chess_d45" width="26" height="26" x="42" y="174"><title>b2</title></use>
+<use id="tile_c2" xlink:href="#Chess_l45" width="26" height="26" x="68" y="174"><title>c2</title></use>
+<use id="tile_d2" xlink:href="#Chess_d45" width="26" height="26" x="94" y="174"><title>d2</title></use>
+<use id="tile_e2" xlink:href="#Chess_l45" width="26" height="26" x="120" y="174"><title>e2</title></use>
+<use id="tile_f2" xlink:href="#Chess_d45" width="26" height="26" x="146" y="174"><title>f2</title></use>
+<use id="tile_g2" xlink:href="#Chess_l45" width="26" height="26" x="172" y="174"><title>g2</title></use>
+<use id="tile_h2" xlink:href="#Chess_d45" width="26" height="26" x="198" y="174"><title>h2</title></use>
+
+<!-- Rank 1 -->
+<use id="tile_a1" xlink:href="#Chess_d45" width="26" height="26" x="16" y="200"><title>a1</title></use>
+<use id="tile_b1" xlink:href="#Chess_l45" width="26" height="26" x="42" y="200"><title>b1</title></use>
+<use id="tile_c1" xlink:href="#Chess_d45" width="26" height="26" x="68" y="200"><title>c1</title></use>
+<use id="tile_d1" xlink:href="#Chess_l45" width="26" height="26" x="94" y="200"><title>d1</title></use>
+<use id="tile_e1" xlink:href="#Chess_d45" width="26" height="26" x="120" y="200"><title>e1</title></use>
+<use id="tile_f1" xlink:href="#Chess_l45" width="26" height="26" x="146" y="200"><title>f1</title></use>
+<use id="tile_g1" xlink:href="#Chess_d45" width="26" height="26" x="172" y="200"><title>g1</title></use>
+<use id="tile_h1" xlink:href="#Chess_l45" width="26" height="26" x="198" y="200"><title>h1</title></use>
+
+</g>
+
+<path d="M 5,122 H 236" stroke="#000" stroke-width="4px" stroke-linecap="round"/>
+
+<!-- Animation -->
+<g id="Animation">
+<use id="Animl1" xlink:href="#Chess_klt45" width="26" height="26" x="120" y="200">
+<title>Light King</title>
+<animateTransform attributeName="transform" attributeType="XML" type="translate" dur="12s" values="0,0; 0,0; 52,0; 52,0; 0,0; 0,0; -52,0; -52,0; 0,0;"/>
+</use>
+<use id="Animl2" xlink:href="#Chess_rlt45" width="26" height="26" x="198" y="200"><title>Light Rook</title>
+<animateTransform attributeName="transform" attributeType="XML" type="translate" dur="6s" values="0,0; 0,0; -52,0; -52,0; 0,0;" />
+</use>
+<use id="Animl3" xlink:href="#Chess_rlt45" width="26" height="26" x="16" y="200"><title>Light Rook</title>
+<animateTransform attributeName="transform" attributeType="XML" type="translate" begin="6s" dur="6s" values="0,0; 0,0; 78,0; 78,0; 0,0;" />
+</use>
+
+<use xlink:href="#Chess_kdt45" width="26" height="26" x="120" y="18"><title>Dark King</title>
+<animateTransform attributeName="transform" attributeType="XML" type="translate" begin="1.5s" dur="12s" values="0,0; 0,0; 52,0; 52,0; 0,0; 0,0; -52,0; -52,0; 0,0;" />
+</use>
+<use xlink:href="#Chess_rdt45" width="26" height="26" x="198" y="18"><title>Dark Rook</title>
+<animateTransform attributeName="transform" attributeType="XML" type="translate" begin="1.5s" dur="6s" values="0,0; 0,0; -52,0; -52,0; 0,0;" />
+</use>
+<use xlink:href="#Chess_rdt45" width="26" height="26" x="16" y="18"><title>Dark Rook</title>
+<animateTransform attributeName="transform" attributeType="XML" type="translate" begin="7.5s" dur="6s" values="0,0; 0,0; 78,0; 78,0; 0,0;" />
+</use>
+</g>
+
+
+</svg>

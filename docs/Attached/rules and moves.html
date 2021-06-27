@@ -1,0 +1,193 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Set of Rules of Chess &#8212; Sphinx Documentation  documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/sidebar.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Portable Game Notation (PGN)" href="What is PGN.html" />
+    <link rel="prev" title="Introduction of Project" href="Aim of the problem.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="What is PGN.html" title="Portable Game Notation (PGN)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Aim of the problem.html" title="Introduction of Project"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx Documentation  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="Chess Project.html" accesskey="U">Chess Project</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="set-of-rules-of-chess">
+<h1>Set of Rules of Chess<a class="headerlink" href="#set-of-rules-of-chess" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h2>
+<p>By convention, chess game pieces are divided into white and black sets. Each set consists of 16 pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns. The game is played on a square board of eight rows (called ranks, denoted 1 to 8 from bottom to top according to White’s perspective) and eight columns (called files, denoted a to h from left to right according to White’s perspective). The 64 squares alternate in color and are referred to as light and dark squares.The chessboard is placed with a light square at the right-hand corner nearest to each player. Thus, each queen starts on a square of its own color.</p>
+</div>
+<div class="section" id="movement">
+<h2>Movement<a class="headerlink" href="#movement" title="Permalink to this headline">¶</a></h2>
+<p>Each piece has its own way of moving. In the diagrams, the dots mark the squares to which the piece can move if there are no intervening piece(s) of either color (except the knight, which leaps over any intervening pieces).</p>
+<div class="section" id="king">
+<h3>King<a class="headerlink" href="#king" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/king.jpg"><img alt="../_images/king.jpg" class="align-left" src="../_images/king.jpg" style="width: 25%;" /></a>
+<p>The king moves one square in any direction. The king also has a special move called castling that involves also moving a rook.</p>
+</div>
+<div class="section" id="queen">
+<h3>Queen<a class="headerlink" href="#queen" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/queen.jpg"><img alt="../_images/queen.jpg" class="align-right" src="../_images/queen.jpg" style="width: 25%;" /></a>
+<p>The queen combines the power of a rook and bishop and can move any number of squares along a rank, file, or diagonal, but cannot leap over other pieces.</p>
+</div>
+<div class="section" id="rook">
+<h3>Rook<a class="headerlink" href="#rook" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/rook.jpg"><img alt="../_images/rook.jpg" class="align-left" src="../_images/rook.jpg" style="width: 25%;" /></a>
+<p>A rook can move any number of squares along a rank or file, but cannot leap over other pieces. Along with the king, a rook is involved during the king’s castling move.</p>
+</div>
+<div class="section" id="bishop">
+<h3>Bishop<a class="headerlink" href="#bishop" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/bishop.jpg"><img alt="../_images/bishop.jpg" class="align-right" src="../_images/bishop.jpg" style="width: 25%;" /></a>
+<p>A bishop can move any number of squares diagonally, but cannot leap over other pieces.</p>
+</div>
+<div class="section" id="knight">
+<h3>Knight<a class="headerlink" href="#knight" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/knight.jpg"><img alt="../_images/knight.jpg" class="align-left" src="../_images/knight.jpg" style="width: 25%;" /></a>
+<p>A knight moves to any of the closest squares that are not on the same rank, file, or diagonal. (Thus the move forms an “L”-shape: two squares vertically and one square horizontally, or two squares horizontally and one square vertically.) The knight is the only piece that can leap over other pieces.</p>
+</div>
+<div class="section" id="pawn">
+<h3>Pawn<a class="headerlink" href="#pawn" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/pawn.jpg"><img alt="../_images/pawn.jpg" class="align-right" src="../_images/pawn.jpg" style="width: 25%;" /></a>
+<p>A pawn can move forward to the unoccupied square immediately in front of it on the same file, or on its first move it can advance two squares along the same file, provided both squares are unoccupied (black dots in the diagram); or the pawn can capture an opponent’s piece on a square diagonally in front of it on an adjacent file, by moving to that square (black “x”s). A pawn has two special moves: the en passant capture and promotion.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="section" id="castling">
+<h2>Castling<a class="headerlink" href="#castling" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/ChessCastlingMovie_en.svg"><div align="center" class="align-center"><img alt="../_images/ChessCastlingMovie_en.svg" src="../_images/ChessCastlingMovie_en.svg" width="25%" /></div>
+</a>
+<p>Once in every game, each king can make a special move, known as castling. Castling consists of moving the king two squares along the first rank toward a rook (that is on the player’s first rank and then placing the rook on the last square that the king just crossed. Castling is permissible if the following conditions are met:[4]</p>
+<ol class="arabic simple">
+<li>Neither the king nor the rook has previously moved during the game.</li>
+<li>There are no pieces between the king and the rook.</li>
+<li>The king cannot be in check, nor can the king pass through any square that is under attack by an enemy piece, or move to a square that would result in check. (Note that castling is permitted if the rook is under attack, or if the rook crosses an attacked square.)</li>
+</ol>
+</div>
+<div class="section" id="en-passant-and-promotion">
+<h2>En passant and promotion<a class="headerlink" href="#en-passant-and-promotion" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/ChessPawnSpecialMoves.gif"><img alt="../_images/ChessPawnSpecialMoves.gif" class="align-center" src="../_images/ChessPawnSpecialMoves.gif" style="width: 25%;" /></a>
+<p>When a pawn makes a two-step advance from its starting position and there is an opponent’s pawn on a square next to the destination square on an adjacent file, then the opponent’s pawn can capture it en passant (“in passing”), moving to the square the pawn passed over. This can be done only on the very next turn; otherwise the right to do so is forfeited. For example, in the animated diagram, the black pawn advances two steps from g7 to g5, and the white pawn on f5 can take it en passant on g6 (but only on White’s next move).</p>
+<p>When a pawn advances to the eighth rank, as a part of the move it is promoted and must be exchanged for the player’s choice of queen, rook, bishop, or knight of the same color. Usually, the pawn is chosen to be promoted to a queen, but in some cases another piece is chosen; this is called underpromotion. In the animated diagram, the pawn on c7 can be advanced to the eighth rank and be promoted. There is no restriction on the piece promoted to, so it is possible to have more pieces of the same type than at the start of the game (e.g., two or more queens).</p>
+</div>
+<div class="section" id="check">
+<h2>Check<a class="headerlink" href="#check" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/Check.png"><img alt="../_images/Check.png" class="align-left" src="../_images/Check.png" style="width: 25%;" /></a>
+<p>When a king is under immediate attack by one or two of the opponent’s pieces, it is said to be in check. A move in response to a check is legal only if it results in a position where the king is no longer in check. This can involve capturing the checking piece; interposing a piece between the checking piece and the king (which is possible only if the attacking piece is a queen, rook, or bishop and there is a square between it and the king); or moving the king to a square where it is not under attack. Castling is not a permissible response to a check.</p>
+<p>The object of the game is to checkmate the opponent; this occurs when the opponent’s king is in check, and there is no legal way to remove it from attack. It is never legal for a player to make a move that puts or leaves the player’s own king in check. In casual games it is common to announce “check” when putting the opponent’s king in check, but this is not required by the rules of chess, and is not usually done in tournaments.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Set of Rules of Chess</a><ul>
+<li><a class="reference internal" href="#setup">Setup</a></li>
+<li><a class="reference internal" href="#movement">Movement</a><ul>
+<li><a class="reference internal" href="#king">King</a></li>
+<li><a class="reference internal" href="#queen">Queen</a></li>
+<li><a class="reference internal" href="#rook">Rook</a></li>
+<li><a class="reference internal" href="#bishop">Bishop</a></li>
+<li><a class="reference internal" href="#knight">Knight</a></li>
+<li><a class="reference internal" href="#pawn">Pawn</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#castling">Castling</a></li>
+<li><a class="reference internal" href="#en-passant-and-promotion">En passant and promotion</a></li>
+<li><a class="reference internal" href="#check">Check</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Aim of the problem.html"
+                        title="previous chapter">Introduction of Project</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="What is PGN.html"
+                        title="next chapter">Portable Game Notation (PGN)</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/Attached/rules and moves.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="What is PGN.html" title="Portable Game Notation (PGN)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Aim of the problem.html" title="Introduction of Project"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Sphinx Documentation  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="Chess Project.html" >Chess Project</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Riya Jain.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.4.
+    </div>
+  </body>
+</html>

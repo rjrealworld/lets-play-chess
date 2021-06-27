@@ -1,0 +1,18 @@
+Chess Project
+=============
+
+Welcome to Chess Description's documentation!
+
+.. image:: images/chessbanner.jpg
+   :width: 50%
+   :align: center
+   
+.. toctree::
+   :maxdepth: 3
+   :caption: Contents:
+   
+   Aim of the problem.rst
+   rules and moves.rst
+   What is PGN.rst
+   What is FEN.rst
+   code description.rst
